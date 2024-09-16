@@ -24,6 +24,7 @@ function App() {
             <Route path="/galeriaindividual" element={<GaleriaIndividual />} />
             <Route path="/chat" element={<Chat />} />
             <Route path="/perfil" element={<Perfil />} />
+            <Route path="/perfil" element={<aaaaaaaaaa />} />
         </Routes>
     </BrowserRouter>
   )
