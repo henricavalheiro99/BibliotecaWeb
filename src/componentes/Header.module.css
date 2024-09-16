@@ -1,0 +1,32 @@
+*{
+    padding: 0 !important;
+    margin: 0;
+    flex-wrap: wrap;
+    font-family: "Quicksand", sans-serif;
+    transition: 0.8s;
+}
+
+.headertudo{
+    background-color: #812302;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 100px;
+}
+
+.icone{
+    font-size: 40px;
+    margin-right: 30px;
+}
+.branco{
+    color: white;
+}
+
+.roxo{
+    color: #6A3CF7;
+}
