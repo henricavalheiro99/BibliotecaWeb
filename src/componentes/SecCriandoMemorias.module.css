@@ -3,6 +3,12 @@
     font-weight: bold;
     color: #6A3CF7;
     text-align: center;
-    margin-top: 20px;
     margin-bottom: 40px;
+}
+
+.divImagensHover{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

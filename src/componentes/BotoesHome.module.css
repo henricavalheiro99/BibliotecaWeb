@@ -1,0 +1,25 @@
+.divbtnHome{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btnHome{
+    width: 200px;
+    height: 55px;
+    border: none;
+    background-color: #6A3CF7;
+    border-radius: 15px;
+    box-shadow:  4px 4px 25px #9c9c9c,
+    -4px -4px 25px #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.btnHome:hover{
+    transform: scale(1.08);
+    background-color: #4821c2;
+}

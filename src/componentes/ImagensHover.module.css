@@ -1,0 +1,36 @@
+.divTotal{
+    height: 248.79px;
+    width: 370px;
+    border-radius: 20px;
+    box-shadow:  4px 4px 25px #9c9c9c,
+    -4px -4px 25px #ffffff;
+}
+
+.details{
+    height: 248.79px;
+    width: 370px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+
+.textDetails{
+    color: white;
+    font-size: 22px;
+    opacity: 0;
+}
+
+.divTotal:hover{
+    transform: scale(1.03);
+    .details{
+        opacity: 0.6;
+    }
+    .textDetails{
+        opacity: 1;
+    }
+}

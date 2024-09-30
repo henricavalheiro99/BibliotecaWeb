@@ -1,5 +1,6 @@
 import css from "./SecPrincipaisLivros.module.css"
 import CardLivro from "./CardLivro";
+import BotoesHome from "./BotoesHome";
 
 export default function SecPrincipaisLivros(){
     return(
@@ -25,6 +26,7 @@ export default function SecPrincipaisLivros(){
                       imagem={`url(./livro3.png)`}
                   ></CardLivro>
           </div>
+          <BotoesHome nome={"Mais livros"}></BotoesHome>
       </div>
     );
 }
