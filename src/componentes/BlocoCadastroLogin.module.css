@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    font-family: "Quicksand", sans-serif;
+    transition: 0.8s;
+}
+
+.container {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.details{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBox {
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow:  8px 8px 25px #656565,
+    -4px -4px 25px #7a7a7a;
+    width: 850px;
+    height: 500px;
+    text-align: center;
+}
+
+.logoSection {
+    flex: 1;
+    background-color: #6A3CF7;
+    padding: 40px;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: -60px;
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.fraseMotivacao{
+    color: white;
+    font-size: 16px;
+}
+
+.formSection {
+    flex: 2;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo{
+    font-size: 30px;
+    color: #6A3CF7;
+    font-weight: bold;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: #F6F6F6;
+    border-radius: 12px;
+    padding-left: 10px;
+}
+
+.icon {
+    margin-right: 10px;
+    color: #6A3CF7;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder {
+    color: #B1B1B1;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+.botaoEnviar {
+    background-color: #6A3CF7;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    box-shadow:  4px 4px 25px #9c9c9c,
+    -4px -4px 25px #ffffff;
+}
+
+.botaoEnviar:hover {
+    transform: scale(1.01);
+    background-color: #4821c2;
+}
+
+.textoBaixo{
+    margin-top: 15px;
+    font-size: 17px;
+    color: black;
+}
+
+.textoSpan{
+    color: #6A3CF7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.textoSpan:hover{
+    text-decoration: underline;
+}
