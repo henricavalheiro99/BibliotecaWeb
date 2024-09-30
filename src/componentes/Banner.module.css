@@ -1,0 +1,36 @@
+.banner{
+    padding-top: 20px;
+    height: 350px;
+    padding-left: 80px;
+}
+
+.titleBanner{
+    font-size: 35px;
+    color: #6A3CF7;
+    font-weight: bold;
+}
+
+.subtitleBanner{
+    width: 70%;
+    font-size: 25px;
+    color: white;
+}
+
+.btnBanner{
+    width: 180px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow:  4px 4px 25px #9c9c9c,
+    -4px -4px 25px #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    color: #6A3CF7;
+    margin-top: 10px;
+}
+
+.btnBanner:hover{
+    transform: scale(1.05);
+    background-color: #dcd8d8;
+}
