@@ -7,7 +7,7 @@ export default function Banner(){
                 <p className={css.subtitleBanner}>Encontre histórias incríveis, aprenda algo novo a cada dia e mergulhe
                     em
                     uma coleção diversa de livros que irão inspirar e transformar sua maneira de ver o mundo.</p>
-                <button className={css.btnBanner}>Saiba Mais</button>
+                <button className={css.btnBanner}><a href={"https://www.sp.senai.br/"}>Saiba Mais</a></button>
         </div>
     );
 }

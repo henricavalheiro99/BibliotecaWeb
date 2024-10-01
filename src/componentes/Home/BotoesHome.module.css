@@ -16,7 +16,11 @@
     -4px -4px 25px #ffffff;
     font-size: 22px;
     font-weight: bold;
+}
+
+.btnHome a{
     color: white;
+    text-decoration: none;
 }
 
 .btnHome:hover{

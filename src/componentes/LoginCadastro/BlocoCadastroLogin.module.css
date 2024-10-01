@@ -73,38 +73,6 @@
     font-weight: bold;
 }
 
-.inputContainer {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    padding: 5px;
-    background-color: #F6F6F6;
-    border-radius: 12px;
-    padding-left: 10px;
-}
-
-.icon {
-    margin-right: 10px;
-    color: #6A3CF7;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    font-family: 'Poppins', sans-serif;
-}
-
-input::placeholder {
-    color: #B1B1B1;
-}
-
-input:focus {
-    border-color: #007bff;
-}
-
 .botaoEnviar {
     background-color: #6A3CF7;
     color: white;
@@ -125,7 +93,7 @@ input:focus {
 }
 
 .textoBaixo{
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 17px;
     color: black;
 }

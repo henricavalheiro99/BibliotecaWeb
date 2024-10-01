@@ -1,14 +1,14 @@
 import css from "./Header.module.css"
 
-export default function Header(){
+export default function Header({icone1, icone2, icone3, icone4, redireciona1, redireciona2, redireciona3, redireciona4}){
     return(
         <div className={css.headertudo + ' w-100'}>
                 <img className={css.logo} src='/logo.svg'/>
                 <div className={css.headerdireita}>
-                    <i className={css.icone + " fa-regular fa-comments " + css.roxo}></i>
-                    <i className={css.icone + " fa-regular fa-image " + css.branco}></i>
-                    <i className={css.icone + " fa-solid fa-book " + css.roxo}></i>
-                    <i className={css.icone + " fa-regular fa-user " + css.branco}></i>
+                    <a href={redireciona1}><i className={css.icone + " fa-regular " + icone1}></i></a>
+                    <a href={redireciona2}><i className={css.icone + " fa-regular " + icone2}></i></a>
+                    <a href={redireciona3}><i className={css.icone + " fa-solid " + icone3}></i></a>
+                    <a href={redireciona4}><i className={css.icone + " fa-regular " + icone4}></i></a>
                 </div>
         </div>
     );

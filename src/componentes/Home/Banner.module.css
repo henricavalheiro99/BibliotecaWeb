@@ -26,11 +26,15 @@
     -4px -4px 25px #ffffff;
     font-size: 22px;
     font-weight: bold;
-    color: #6A3CF7;
     margin-top: 10px;
 }
 
 .btnBanner:hover{
     transform: scale(1.05);
     background-color: #dcd8d8;
+}
+
+.btnBanner a {
+    text-decoration: none;
+    color: #6A3CF7;
 }

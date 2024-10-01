@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import css from './Login.module.css';
-import BlocoCadastroLogin from "../componentes/BlocoCadastroLogin";
+import BlocoCadastroLogin from "../componentes/LoginCadastro/BlocoCadastroLogin";
 
 export default function Login(){
     return (
@@ -11,6 +11,8 @@ export default function Login(){
                 botaoTexto={"Entrar"}
                 textoBaixo={"Não possui conta?"}
                 textoSpan={"Cadastrar"}
+                redireciona={"/cadastro"}
+                repetirSenha={false}
             ></BlocoCadastroLogin>
         </div>
     );
