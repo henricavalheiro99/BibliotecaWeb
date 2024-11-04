@@ -1,6 +1,6 @@
 import css from "./InputCadastroLogin.module.css"
 
-export default function InputCadastroLogin({tipo, placeholder, icone,}){
+export default function InputCadastroLogin({tipo, placeholder, icone, setChange, _value}){
     return (
         <div className={css.pegaTudo}>
             <div className={css.divInput}>
@@ -9,7 +9,10 @@ export default function InputCadastroLogin({tipo, placeholder, icone,}){
                 <i className={css.icone + " fa-solid " + icone}></i>
                 <input className={css.inputCadastro}
                        type={tipo}
-                       placeholder={placeholder}/>
+                       placeholder={placeholder}
+                       value={_value}
+                       onChange={(e) => setChange(e.target.value)}
+                />
             </div>
         </div>
     )

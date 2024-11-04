@@ -6,6 +6,7 @@ export default function Cadastro(){
     return(
         <div>
             <BlocoCadastroLogin
+                rota={"/cadastro_usuario"}
                 frase={"O conhecimento é a única coisa que ninguém pode tirar de você"}
                 titulo={"Crie sua conta"}
                 botaoTexto={"Cadastrar"}

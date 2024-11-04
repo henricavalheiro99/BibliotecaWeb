@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
+import React, {useContext, useState} from 'react';
 import css from './Login.module.css';
 import BlocoCadastroLogin from "../componentes/LoginCadastro/BlocoCadastroLogin";
 
+
 export default function Login(){
+
+
     return (
         <div>
             <BlocoCadastroLogin
+                rota={"/login"}
                 frase={"O verdadeiro conhecimento é aquele que capacita as pessoas a se transformarem"}
                 titulo={"Entre na sua conta"}
                 botaoTexto={"Entrar"}
