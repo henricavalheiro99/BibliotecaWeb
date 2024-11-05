@@ -22,7 +22,7 @@ function App() {
                   <Route path="/cadastro" element={<Cadastro />} />
                   <Route path="/home" element={<Home />} />
                   <Route path="/paginalivros" element={<PaginaDeLivros />} />
-                  <Route path="/livroespecifico" element={<LivroEspecifico />} />
+                  <Route path="/livroespecifico/:livroId" element={<LivroEspecifico />} />
                   <Route path="/galeria" element={<Galeria />} />
                   <Route path="/galeriaindividual" element={<GaleriaIndividual />} />
                   <Route path="/chat" element={<Chat />} />
