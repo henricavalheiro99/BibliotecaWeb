@@ -6,7 +6,7 @@ export default function SecPrincipaisLivros(){
       <div>
           <p className={css.titlePrincipaisLivros}>Principais livros</p>
           <div className={css.divCardsLivros}>
-              <a href={"/livroespecifico"}>
+              <a href={"/livroespecifico/12"}>
                   <CardLivro
                       nome={"Era uma vez um coração partido"}
                       genero={"Romance"}
@@ -14,7 +14,7 @@ export default function SecPrincipaisLivros(){
                       imagem={`url(./livro1.png)`}
                   ></CardLivro>
               </a>
-              <a href={"/livroespecifico"}>
+              <a href={"/livroespecifico/11"}>
                   <CardLivro
                       nome={"Viagem ao centro da terra"}
                       genero={"Aventura"}
