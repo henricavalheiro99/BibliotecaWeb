@@ -22,7 +22,7 @@ export default function SecPrincipaisLivros(){
                       imagem={`url(./livro2.png)`}
                   ></CardLivro>
               </a>
-              <a href={"/livroespecifico"}>
+              <a href={"/livroespecifico/1"}>
                   <CardLivro
                       nome={"O cemitério de gigantes"}
                       genero={"Terror"}

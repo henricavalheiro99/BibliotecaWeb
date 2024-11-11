@@ -9,23 +9,27 @@ import Galeria from "./paginas/Galeria";
 import GaleriaIndividual from "./paginas/GaleriaIndividual";
 import Chat from "./paginas/Chat";
 import Perfil from "./paginas/Perfil";
+import {DadosProvider} from "./context/ApiContext";
+
 
 function App() {
   return (
-    <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<Navigate to="/login" />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/cadastro" element={<Cadastro />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/paginalivros" element={<PaginaDeLivros />} />
-            <Route path="/livroespecifico" element={<LivroEspecifico />} />
-            <Route path="/galeria" element={<Galeria />} />
-            <Route path="/galeriaindividual" element={<GaleriaIndividual />} />
-            <Route path="/chat" element={<Chat />} />
-            <Route path="/perfil" element={<Perfil />} />
-        </Routes>
-    </BrowserRouter>
+      <DadosProvider>
+          <BrowserRouter>
+              <Routes>
+                  <Route path="/" element={<Navigate to="/login" />} />
+                  <Route path="/login" element={<Login />} />
+                  <Route path="/cadastro" element={<Cadastro />} />
+                  <Route path="/home" element={<Home />} />
+                  <Route path="/paginalivros" element={<PaginaDeLivros />} />
+                  <Route path="/livroespecifico/:livroId" element={<LivroEspecifico />} />
+                  <Route path="/galeria" element={<Galeria />} />
+                  <Route path="/galeriaindividual" element={<GaleriaIndividual />} />
+                  <Route path="/chat" element={<Chat />} />
+                  <Route path="/perfil" element={<Perfil />} />
+              </Routes>
+          </BrowserRouter>
+      </DadosProvider>
   )
 }
 export default App;
