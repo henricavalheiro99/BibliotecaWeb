@@ -13,7 +13,7 @@ export default function Home(){
                     <Header
                     redireciona1={"./Chat"}
                     redireciona2={"./Galeria"}
-                    redireciona3={"./PaginaDeLivros"}
+                    redireciona3={"./paginalivros"}
                     redireciona4={"./Perfil"}
                     icone1={"fa-comments"}
                     icone2={"fa-image"}
