@@ -31,7 +31,7 @@ export default function SecPrincipaisLivros(){
                   ></CardLivro>
               </a>
           </div>
-          <BotoesHome nome={"Mais livros"} link={"../../paginas/PaginaDeLivros"}></BotoesHome>
+          <BotoesHome nome={"Mais livros"} link={"paginalivros"}></BotoesHome>
       </div>
     );
 }
