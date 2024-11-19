@@ -69,7 +69,7 @@ function CardChat() {
                     <div className={css.direita}>
                         <div>
                             <label className={css.label} htmlFor="nome">Nome:</label>
-                            <input
+                            <input className={css.inputChat}
                                 type="text"
                                 id="nome"
                                 name="nome"
@@ -81,7 +81,7 @@ function CardChat() {
 
                         <div>
                             <label className={css.label} htmlFor="editora">Editora:</label>
-                            <input
+                            <input className={css.inputChat}
                                 type="text"
                                 id="editora"
                                 name="editora"
@@ -93,7 +93,7 @@ function CardChat() {
 
                         <div>
                             <label className={css.label} htmlFor="data_lancamento">Lançamento:</label>
-                            <input
+                            <input className={css.inputChat}
                                 type="date"
                                 id="data_lancamento"
                                 name="data_lancamento"
@@ -105,7 +105,7 @@ function CardChat() {
 
                         <div>
                             <label className={css.label} htmlFor="categoria">Categoria:</label>
-                            <select
+                            <select  className={css.inputChat}
                                 id="categoria"
                                 name="categoria"
                                 value={formData.categoria}
@@ -121,7 +121,7 @@ function CardChat() {
 
                         <div>
                             <label className={css.label} htmlFor="descricao">Descrição:</label>
-                            <textarea
+                            <textarea  className={css.inputChat} style={{resize: "none"}}
                                 id="descricao"
                                 name="descricao"
                                 value={formData.descricao}
@@ -129,7 +129,10 @@ function CardChat() {
                                 required
                             ></textarea>
                         </div>
-                        <button type="submit">Enviar</button>
+
+                        <div className={css.divBtn}>
+                            <button className={css.btnChat} type="submit">Enviar</button>
+                        </div>
                     </div>
                 </form>
         </div>

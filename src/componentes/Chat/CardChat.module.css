@@ -2,7 +2,7 @@
     margin-top: 30px;
     background-color: #f6f6f6;
     width: 800px;
-    height: 400px;
+    height: 500px;
     border-radius: 20px;
     box-shadow:  8px 8px 25px #a6a6a6,
     -4px -4px 25px #ffffff;
@@ -32,6 +32,7 @@
 
 .direita{
     height: 100%;
+    width: 50%;
 }
 
 .icone{
@@ -47,5 +48,34 @@
 }
 
 .label{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.inputChat{
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #eeeeee;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #c1c1c1;
+    margin-bottom: 10px;
+}
+
+.btnChat{
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: #6A3CF7;
+    border-radius: 10px;
+    box-shadow: 4px 4px 25px #9c9c9c, -4px -4px 25px #ffffff;
     font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.btnChat:hover{
+    transform: scale(1.02);
 }
