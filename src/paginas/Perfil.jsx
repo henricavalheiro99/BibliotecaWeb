@@ -4,16 +4,16 @@ import css from "./Home.module.css";
 import Banner from "../componentes/Home/Banner";
 
 
-function Perfil() {
+export default function Perfil() {
     return (
-        <div>
+        <div className={css.main + ' container-fluid'}>
             <div style={{backgroundImage: `url(./background-teste.png)`}} className={css.blocoSec1}>
                 <div className={css.details}>
                     <Header
-                        redireciona1={"./Chat"}
-                        redireciona2={"./Galeria"}
-                        redireciona3={"./PaginaDeLivros"}
-                        redireciona4={"./Perfil"}
+                        redireciona1={"./chat"}
+                        redireciona2={"./galeria"}
+                        redireciona3={"./paginalivros"}
+                        redireciona4={"./perfil"}
                         icone1={"fa-comments"}
                         icone2={"fa-image"}
                         icone3={"fa-book"}
@@ -22,8 +22,5 @@ function Perfil() {
                 </div>
             </div>
         </div>
-
     );
 }
-
-export default Perfil;
