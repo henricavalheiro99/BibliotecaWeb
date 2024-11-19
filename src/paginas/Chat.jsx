@@ -2,7 +2,7 @@ import css from "./Chat.module.css"
 import Header from "../componentes/Header";
 import {FaStar} from "react-icons/fa";
 import React from "react";
-import CardChat from "../componentes/CardChat";
+import CardChat from "../componentes/Chat/CardChat";
 
 
 export default function Chat(){
@@ -21,9 +21,9 @@ export default function Chat(){
                         icone4={"fa-user"}
                     ></Header>
                 </div>
-
             </div>
-            <div>
+            <p className={css.title}>Cadastro de Sugestão</p>
+            <div className={css.alinharTudo}>
                 <CardChat></CardChat>
             </div>
         </div>

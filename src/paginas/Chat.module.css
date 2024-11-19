@@ -1,0 +1,20 @@
+.details{
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    width: 100%;
+}
+
+.title{
+    font-size: 28px;
+    font-weight: bold;
+    color: #6A3CF7;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.alinharTudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
