@@ -29,7 +29,7 @@ export default function PaginaDeLivros(){
                         {/*<i className="fa-solid fa-key"></i>*/}
                         {/*<i className="fa-solid fa-envelope"></i>*/}
                         <i className={"fa-solid fa-magnifying-glass"}
-                           style={{fontSize: "25px", paddingRight: "20px"}}></i>
+                           style={{fontSize: "25px", paddingRight: "10px", paddingLeft: "10px"}}></i>
                         <input className={css.inputCadastro}
                                type={"text"}
                                placeholder={"Search...."}
