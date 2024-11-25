@@ -64,6 +64,13 @@
     margin-bottom: 10px;
 }
 
+.inputChat:hover, .inputChat:focus{
+    outline: none;
+    border-color: #4821c2;
+    box-shadow: 0 0 0 4px #8162f1;
+    transition: 0.5s !important;
+}
+
 .btnChat{
     width: 100%;
     height: 45px;

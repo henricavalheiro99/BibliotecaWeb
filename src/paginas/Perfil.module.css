@@ -1,70 +1,130 @@
-.perfilContainer {
-    width: 400px;
-    margin: 20px auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-}
-
-.perfilHeader h2 {
-    color: #5f3dc4; /* Cor roxa */
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.perfilContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.perfilAvatarContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.perfilAvatar {
-    width: 120px;
-    height: 120px;
-    background-color: #5f3dc4; /* Cor roxa */
-    border-radius: 50%;
-}
-
-.perfilTrocarFoto {
-    margin-top: 10px;
-    border: 1px dashed #999;
-    padding: 5px 10px;
-    background-color: #f8f8f8;
-    cursor: pointer;
-}
-
-.perfilInfo {
+.details{
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
     width: 100%;
-    text-align: left;
 }
 
-.perfilInfoItem {
-    margin-bottom: 10px;
-}
-
-.perfilInfoItem label {
+.titlePerfil{
+    font-size: 28px;
     font-weight: bold;
-    display: block;
+    color: #6A3CF7;
+    margin-top: 30px;
+    margin-left: 40px;
 }
 
-.perfilInfoItem p {
-    margin: 5px 0;
+.alinharQuadro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.perfilEditarInfo {
-    margin-top: 20px;
-    padding: 8px 12px;
-    background-color: #f8f8f8;
-    border: 1px solid #aaa;
-    border-radius: 4px;
+.profilecontainer {
+    width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
     cursor: pointer;
+    box-shadow: 5px 5px 10px 10px #d9d9d9;
+    border-radius: 10px;
+    height: 350px;
+
+}
+
+.divTudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.circuloFoto {
+    width: 180px;
+    height: 180px;
+    background-color: #7f3fbf;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.botaoFoto {
+    padding: 8px 16px;
+    background-color: #d8d8d8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 32px;
+    color: #FFFFFF;
+    width: 170px;
+}
+
+.botaoFoto:hover{
+    background-color: #c7c7c7;
+}
+
+.textoEdicao {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.profileinfo label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.botaoEditar {
+    padding: 8px 16px;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    color: #000;
+    border: 1px solid #7f3fbf;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 170px;
+    margin-top: 40px;
+}
+
+.botaoEditar:hover{
+    transform: scale(1.05);
+    background-color: #f8f3ff;
+}
+
+.savebutton, .backbutton {
+    padding: 10px 20px;
+    background-color: #7f3fbf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.backbutton {
+    background-color: #d8d8d8;
+}
+
+.buttongroup {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.savebutton, .backbutton {
+    width: 48%;
 }
