@@ -10,6 +10,7 @@ import GaleriaIndividual from "./paginas/GaleriaIndividual";
 import Chat from "./paginas/Chat";
 import Perfil from "./paginas/Perfil";
 import {DadosProvider} from "./context/ApiContext";
+import PaginaDeSugestoes from "./paginas/PaginaDeSugestoes";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                   <Route path="/cadastro" element={<Cadastro />} />
                   <Route path="/home" element={<Home />} />
                   <Route path="/paginalivros" element={<PaginaDeLivros />} />
+                  <Route path="/paginasugestao" element={<PaginaDeSugestoes/>}/>
                   <Route path="/livroespecifico/:livroId" element={<LivroEspecifico />} />
                   <Route path="/galeria" element={<Galeria />} />
                   <Route path="/galeriaindividual" element={<GaleriaIndividual />} />
