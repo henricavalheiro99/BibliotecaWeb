@@ -8,7 +8,6 @@ const Dados = createContext()
 function DadosProvider({ children }) {
 
 
-
     const fetchData = async (url, method, body= null, id= null) => {
         console.log(url, method, body, id)
 
