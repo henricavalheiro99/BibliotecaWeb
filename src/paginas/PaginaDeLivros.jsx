@@ -1,11 +1,31 @@
 import css from "./PaginaDeLivros.module.css"
 import Header from "../componentes/Header";
 import {FaStar} from "react-icons/fa";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import CardLivro2 from "../componentes/CardLivro2";
 
 
 export default function PaginaDeLivros(){
+    const [livros, setLivros] = useState([])
+
+    useEffect(() => {
+        async function busca() {
+            fetch("http://127.0.0.1:5000/livros_inf",{
+                    method: "GET",
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                })
+                .then((resp) => resp.json())
+                .then(function (data) {
+                    console.log(data)
+                    setLivros(data.livro)
+                } )
+        }
+
+        busca()
+    }, []);
+
     return (
         <div className={css.main + ' container-fluid'}>
             <div style={{backgroundImage: `url(./background-teste.png)`}} className={css.blocoSec1}>
@@ -44,31 +64,16 @@ export default function PaginaDeLivros(){
             <div className={css.ContainerMain}>
                 <h1 style={{fontSize: "xx-large", color: "black",fontWeight: 800}}>Titulos que podem ser encontrados na biblioteca</h1>
                 <div  className={css.divContainer}>
-                    <a style={{textDecoration: "none"}} href={"/livroespecifico/12"}>
-                        <CardLivro2
-                            nome={"Era uma vez um coração partido"}
-                            genero={"Romance"}
-                            autor={"Stephanie Garber"}
-                            imagem={`url(./livro1.png)`}
-                        ></CardLivro2>
-                    </a>
-                    <a style={{textDecoration: "none"}} href={"/livroespecifico/11"}>
-                        <CardLivro2
-                            nome={"Viagem ao centro da terra"}
-                            genero={"Aventura"}
-                            autor={"Jules Verne"}
-                            imagem={`url(./livro2.png)`}
-                        ></CardLivro2>
-                    </a>
-                    <a style={{textDecoration: "none"}} href={"/livroespecifico/1"}>
-                        <CardLivro2
-                            style={{height: 10}}
-                            nome={"O cemitério de gigantes"}
-                            genero={"Terror"}
-                            autor={"Malu Costacurta"}
-                            imagem={`url(./livro3.png)`}
-                        ></CardLivro2>
-                    </a>
+                    {livros.map((livro) => (
+                        <a style={{textDecoration: "none"}} href={"/livroespecifico/" + livro.id_livro}>
+                            <CardLivro2
+                                nome={livro.titulo}
+                                genero={livro.genero}
+                                autor={livro.autor}
+                                imagem={`url(http://127.0.0.1:5000/static/uploads/livro/${livro.id_livro}.jpg)`}
+                            ></CardLivro2>
+                        </a>
+                    ))}
                 </div>
             </div>
         </div>

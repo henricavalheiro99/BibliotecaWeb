@@ -59,7 +59,7 @@ export default function LivroEspecifico(){
                 <div className={css.card}>
                     <div className={css.imgestrela}>
                         <img
-                            src={"http://127.0.0.1:5000/static/uploads/" + livroId + ".jpg"}
+                            src={"http://127.0.0.1:5000/static/uploads/livro/" + livroId + ".jpg"}
                             alt="Diário de um Banana"
                             className={css.image}
                         />
