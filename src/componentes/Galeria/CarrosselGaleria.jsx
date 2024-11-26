@@ -5,19 +5,27 @@ export default function CarrosselGaleria(){
         <div id="carouselExample" className="carousel slide" style={{width: '65%', display: 'block', margin: '0 auto'}}>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <p className={css.textoPreto}><span className={css.textoRoxo}>Curso: </span>Técnico em desenvolvimento de sistemas</p>
+                    <p className={css.textoPreto}><span className={css.textoRoxo}>Curso: </span>Técnico em
+                        desenvolvimento de sistemas</p>
                     <p className={css.textoPreto}><span className={css.textoRoxo}>Ano: </span>2023 e 2024</p>
-                    <img src="/carrossel4.png" className="d-block imgs" alt=""/>
+                    <div style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                        <img src="/carrossel4.png" className="d-block imgs" alt="" style={{borderRadius: "10px", width: "70%"}}/>
+                    </div>
                 </div>
                 <div className="carousel-item">
-                    <p className={css.textoPreto}><span className={css.textoRoxo}>Curso: </span>Técnico em eletromecânica</p>
+                    <p className={css.textoPreto}><span className={css.textoRoxo}>Curso: </span>Técnico em
+                        eletromecânica</p>
                     <p className={css.textoPreto}><span className={css.textoRoxo}>Ano: </span>2023 e 2024</p>
-                    <img src="/carrossel5.png" className="d-block imgs" alt=""/>
+                    <div style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                        <img src="/carrossel5.png" className="d-block imgs" alt="" style={{borderRadius: "10px", width: "70%"}}/>
+                    </div>
                 </div>
                 <div className="carousel-item">
                     <p className={css.textoPreto}><span className={css.textoRoxo}>Curso: </span>Vendas</p>
                     <p className={css.textoPreto}><span className={css.textoRoxo}>Ano: </span>2023 e 2024</p>
-                    <img src="/carrossel6.png" className="d-block imgs" alt=""/>
+                    <div style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                        <img src="/carrossel6.png" className="d-block imgs" alt="" style={{borderRadius: "10px", width: "70%"}}/>
+                    </div>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample"

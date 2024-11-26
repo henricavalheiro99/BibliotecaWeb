@@ -24,3 +24,13 @@ code {
   font-family: "Quicksand", sans-serif;
   transition: 0.8s;
 }
+
+.carousel-item {
+  margin-left: 50px;
+  width: 90%;
+  padding: 20px;
+  background-color: #f3f3f3 !important;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
