@@ -2,7 +2,7 @@ import css from "./Galeria.module.css"
 import Header from "../componentes/Header";
 import Banner from "../componentes/Home/Banner";
 import React from "react";
-
+import CarrosselGaleria from "../componentes/Galeria/CarrosselGaleria";
 export default function Galeria(){
     return(
         <div className={css.main + ' container-fluid'}>
@@ -37,6 +37,9 @@ export default function Galeria(){
                     />
                 </div>
                 <button className={css.btnSearch}>Buscar</button>
+            </div>
+            <div>
+                <CarrosselGaleria></CarrosselGaleria>
             </div>
         </div>
     );
