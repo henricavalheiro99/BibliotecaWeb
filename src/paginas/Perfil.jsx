@@ -69,21 +69,21 @@ export default function Perfil() {
                             <div className={css.profilecontent}>
                                 <div className={css.profileinfo}>
                                     <label>Nome:</label>
-                                    <input
+                                    <input className={css.inputPerfil}
                                         type="text"
                                         name="name"
                                         value={userData.name}
                                         onChange={handleChange}
                                     />
                                     <label>Email:</label>
-                                    <input
+                                    <input className={css.inputPerfil}
                                         type="email"
                                         name="email"
                                         value={userData.email}
                                         onChange={handleChange}
                                     />
                                     <label>Senha:</label>
-                                    <input
+                                    <input className={css.inputPerfil}
                                         type="password"
                                         name="password"
                                         value={userData.password}
