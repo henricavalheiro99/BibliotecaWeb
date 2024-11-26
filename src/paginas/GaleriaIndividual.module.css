@@ -1,0 +1,31 @@
+.details{
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    width: 100%;
+}
+
+.linha1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.textoPreto{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.textoRoxo {
+    color: #6A3CF7;
+}
+
+.linha2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
