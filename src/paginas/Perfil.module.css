@@ -70,8 +70,6 @@
 }
 
 .profileinfo label {
-    display: block;
-    margin-top: 10px;
     font-weight: bold;
 }
 
@@ -103,7 +101,7 @@ input {
     background-color: #f8f3ff;
 }
 
-.savebutton, .backbutton {
+.saveButton, .backButton {
     padding: 10px 20px;
     background-color: #7f3fbf;
     color: white;
@@ -115,8 +113,18 @@ input {
     width: 100%;
 }
 
-.backbutton {
+.saveButton:hover{
+    background-color: #ab5ef6;
+    transform: scale(1.03);
+}
+
+.backButton {
     background-color: #d8d8d8;
+    transform: scale(1.03);
+}
+
+.backButton:hover{
+    background-color: #c7c7c7;
 }
 
 .buttongroup {
@@ -125,6 +133,6 @@ input {
     width: 100%;
 }
 
-.savebutton, .backbutton {
+.saveButton, .backButton {
     width: 48%;
 }

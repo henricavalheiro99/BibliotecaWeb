@@ -90,10 +90,10 @@ export default function Perfil() {
                                         onChange={handleChange}
                                     />
                                     <div className={css.buttongroup}>
-                                        <button className={css.savebutton} onClick={handleSaveClick}>
+                                        <button className={css.saveButton} onClick={handleSaveClick}>
                                             Salvar
                                         </button>
-                                        <button className={css.backbutton} onClick={() => setIsEditing(false)}>
+                                        <button className={css.backButton} onClick={() => setIsEditing(false)}>
                                             Voltar
                                         </button>
                                     </div>
