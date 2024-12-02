@@ -1,6 +1,30 @@
 import css from "./CarrosselGaleria.module.css"
+import {useEffect, useState} from "react";
 
 export default function CarrosselGaleria(){
+
+    const [foto, setFoto] = useState([])
+
+
+    useEffect(() => {
+        async function busca() {
+            fetch("http://127.0.0.1:5000/fotos_inf",{
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+                .then((resp) => resp.json())
+                .then(function (data) {
+                    console.log(data)
+                    setFoto(data.fotos)
+                } )
+        }
+
+        busca()
+    }, []);
+
+
     return (
         <div id="carouselExample" className="carousel slide" style={{width: '65%', display: 'block', margin: '0 auto'}}>
             <div className="carousel-inner">

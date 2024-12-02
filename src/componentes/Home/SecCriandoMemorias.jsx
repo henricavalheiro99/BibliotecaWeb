@@ -15,7 +15,7 @@ export default function SecCriandoMemorias(){
                 <ImagensHover imagem={`url(./hover3.png)`} descricao={"Cada página lida é um passo dado em direção à sabedoria: o conhecimento transforma a mente e o mundo ao seu redor"}></ImagensHover>
             </div>
             <BaixoDaHome imagem1={'./baixoHome1.png'} imagem2={'./baixoHome2.png'}></BaixoDaHome>
-            <BotoesHome nome={"Galeria"}  link={"../../paginas/Galeria"}></BotoesHome>
+            <BotoesHome nome={"Galeria"}  link={"/galeriaindividual"}></BotoesHome>
         </div>
     )
 }

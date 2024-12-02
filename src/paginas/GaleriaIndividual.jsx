@@ -1,9 +1,33 @@
 import css from "./GaleriaIndividual.module.css"
 import Header from "../componentes/Header";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import ImagensHover from "../componentes/Home/ImagensHover";
+import CardLivro2 from "../componentes/CardLivro2";
 
 export default function GaleriaIndividual(){
+    const [foto, setFoto] = useState([])
+
+
+    useEffect(() => {
+        async function busca() {
+            fetch("http://127.0.0.1:5000/fotos_inf",{
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+                .then((resp) => resp.json())
+                .then(function (data) {
+                    console.log(data)
+                    setFoto(data.fotos)
+                } )
+        }
+
+        busca()
+    }, []);
+
+
+
     return(
         <div className={css.main + ' container-fluid'}>
             <div style={{backgroundImage: `url(./background-teste.png)`}} className={css.blocoSec1}>
@@ -28,15 +52,15 @@ export default function GaleriaIndividual(){
                    style={{color: "#6A3CF7", fontSize: "40px", cursor: "pointer"}}></i>
             </div>
             <div className={css.linha2}>
-                <ImagensHover imagem={`url(./carrossel4.png)`} descricao={"Estamos conversando animadamente na biblioteca, cercados por livros e um ambiente acolhedor"}></ImagensHover>
-                <ImagensHover imagem={`url(./carrossel5.png)`} descricao={"Estamos conversando animadamente na biblioteca, cercados por livros e um ambiente acolhedor"}></ImagensHover>
-                <ImagensHover imagem={`url(./carrossel6.png)`} descricao={"Estamos conversando animadamente na biblioteca, cercados por livros e um ambiente acolhedor"}></ImagensHover>
+                {foto?.map((fotos) => (
+                    <ImagensHover
+                        imagem={`url(http://127.0.0.1:5000/static/uploads/galeria/${fotos.id_fotos}.jpg)`}
+                        descricao={fotos.descricao}
+                    ></ImagensHover>
+
+                ))}
             </div>
-            <div className={css.linha2}>
-                <ImagensHover imagem={`url(./carrossel6.png)`} descricao={"Estamos conversando animadamente na biblioteca, cercados por livros e um ambiente acolhedor"}></ImagensHover>
-                <ImagensHover imagem={`url(./carrossel5.png)`} descricao={"Estamos conversando animadamente na biblioteca, cercados por livros e um ambiente acolhedor"}></ImagensHover>
-                <ImagensHover imagem={`url(./carrossel4.png)`} descricao={"Estamos conversando animadamente na biblioteca, cercados por livros e um ambiente acolhedor"}></ImagensHover>
-            </div>
+
         </div>
     );
 }

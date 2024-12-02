@@ -1,9 +1,12 @@
 import css from "./Galeria.module.css"
 import Header from "../componentes/Header";
 import Banner from "../componentes/Home/Banner";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import CarrosselGaleria from "../componentes/Galeria/CarrosselGaleria";
 export default function Galeria(){
+
+
+
     return(
         <div className={css.main + ' container-fluid'}>
             <div style={{backgroundImage: `url(./background-teste.png)`}} className={css.blocoSec1}>

@@ -3,6 +3,7 @@ import Header from "../componentes/Header";
 import React, {useEffect, useState} from "react";
 import CardLivro2 from "../componentes/CardLivro2";
 
+
 export default function PaginaDeSugestoes(){
     const [sugestoes, setSugestoes] = useState([])
 
