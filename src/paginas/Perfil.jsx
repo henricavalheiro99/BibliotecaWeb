@@ -36,11 +36,11 @@ export default function Perfil() {
                         redireciona1={"./chat"}
                         redireciona2={"./galeria"}
                         redireciona3={"./paginalivros"}
-                        redireciona4={"./perfil"}
+                        redireciona4={"./home"}
                         icone1={"fa-comments"}
                         icone2={"fa-image"}
                         icone3={"fa-book"}
-                        icone4={"fa-user"}
+                        icone4={"fa-house"}
                     ></Header>
                 </div>
             </div>

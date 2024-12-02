@@ -1,6 +1,5 @@
 import css from "./PaginaDeLivros.module.css"
 import Header from "../componentes/Header";
-import {FaStar} from "react-icons/fa";
 import React, {useEffect, useState} from "react";
 import CardLivro2 from "../componentes/CardLivro2";
 
@@ -33,11 +32,11 @@ export default function PaginaDeLivros(){
                     <Header
                         redireciona1={"./chat"}
                         redireciona2={"./galeria"}
-                        redireciona3={"./paginalivros"}
+                        redireciona3={"./home"}
                         redireciona4={"./perfil"}
                         icone1={"fa-comments"}
                         icone2={"fa-image"}
-                        icone3={"fa-book"}
+                        icone3={"fa-house"}
                         icone4={"fa-user"}
                     ></Header>
                 </div>

@@ -11,11 +11,11 @@ export default function Chat(){
             <div style={{backgroundImage: `url(./background-teste.png)`}} className={css.blocoSec1}>
                 <div className={css.details}>
                     <Header
-                        redireciona1={"./chat"}
+                        redireciona1={"./home"}
                         redireciona2={"./galeria"}
                         redireciona3={"./paginalivros"}
                         redireciona4={"./perfil"}
-                        icone1={"fa-comments"}
+                        icone1={"fa-house"}
                         icone2={"fa-image"}
                         icone3={"fa-book"}
                         icone4={"fa-user"}

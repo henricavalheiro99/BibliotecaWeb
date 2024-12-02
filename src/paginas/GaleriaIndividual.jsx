@@ -10,11 +10,11 @@ export default function GaleriaIndividual(){
                 <div className={css.details}>
                     <Header
                         redireciona1={"./Chat"}
-                        redireciona2={"./Galeria"}
+                        redireciona2={"./home"}
                         redireciona3={"./paginalivros"}
                         redireciona4={"./Perfil"}
                         icone1={"fa-comments"}
-                        icone2={"fa-image"}
+                        icone2={"fa-house"}
                         icone3={"fa-book"}
                         icone4={"fa-user"}
                     ></Header>
